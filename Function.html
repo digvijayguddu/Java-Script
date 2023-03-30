@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <div id = "d1"></div>   
+    <script>
+        //1.Normal Function
+        function greeting(){
+            return "Digvijay Lad";
+        }
+        document.getElementById("d1").innerHTML=greeting();
+        function welcome(name){
+            return "welcome"+name;
+        }
+        console.log(welcome("Swapnil"));
+
+        //2.anonymous function : function with no name
+
+        var mul = function(){
+            return 5*5;
+        }
+        console.log(mul());
+
+        //3.
+        var div = ()=>{
+            return 10/2;
+
+        }
+        console.log(div());
+        var div = (n1,n2)=>{
+            return n1/n2;
+
+        }
+        console.log(div(100,5));
+
+        //5.optional parameterize function: in this passing value to parameter is not temprory
+
+        var fullName = (fname,lname,mname )=>{
+                return fname + mname + lname;
+        }
+        console.log(fullName("Digvijay", "Lad"));
+        console.log(fullName("Guddu","Lad","K"));
+
+        //6.Rest parameterized function : when we dont know how many parameters are req.
+
+        var stds = (s1,s2,s3)=>{
+            return s1+s2+s3;
+
+        }
+        console.log(stds("Rahul","Swapnil","Anmol"));
+
+        var stdss = (...std)=>{
+            return std;
+
+        }
+        console.log(stdss("Rahul","Swapnil","Anmol"));
+    </script>
+</body>
+</html>

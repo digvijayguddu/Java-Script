@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var student = ["anmol,vishal,rahul,adesh,digu"];
+        console.log(student);
+        console.log(student[2]);
+        student[1]="Shravan";
+        console.log(student);
+
+        //Find array length
+        console.log("array length:"+student.length);
+
+        //how to find array size
+        console.log("array size:",student.length-1);
+
+        //push method
+        student.push("Dinesh","Kartik");
+        console.log(student);
+
+        //pop():delete last index.
+        student.pop();
+        console.log(student);
+
+        student.unshift("Dhoni");
+        console.log(student);
+
+        //Shift():it removes value from first index of array.
+        student.shift();
+        console.log(student);
+
+        //5.splice (start-index, delete-count,)
+        student.splice(3,0,"Pranay","Ashwini");
+        console.log(student);
+        student.splice(4,2);
+        console.log(student);
+
+        student.splice(2,2,"Sweta","Rani","Swati");
+        console.log(student);
+
+        //6.to string
+        console.log(student.toString());
+
+        //7.join(seprator)
+        console.log(student.join("*"));
+        console.log(student.join(""));
+
+        //8.Slice(start index,end index):
+        console.log(student.slice(3));
+        console.log(student.slice(3,5));
+
+        var city=["Sangli","Satara","Kolhapur","Pune","mumbai","Nagpur"];
+        for(var i=0;i<city.length;i++)
+        {
+            document.write(city[i],",");
+        }
+        document.write("<br>");
+        for(var i=0;i<=city.length;i++)
+        if(city[i]=="Sangli" && city[i]=="Pune")
+        {
+            document.write("City Available");
+        }
+        
+        for(let cit of city){
+           document.write(cit,","); 
+        }
+    </script>
+</body>
+</html>

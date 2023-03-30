@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <strong id = "d1"></strong>
+    <div id="d2"></div>
+    <div id="d3"></div>
+    <div id="d4"></div>
+    <div id="d5"></div>
+    <div id="d6"></div>
+    <div id="d7"></div>
+    <div id="d8"></div>
+    <div id="d9"></div>
+    <div id="d10"></div>
+    <div id="d11"></div>
+    
+    
+
+    <script>
+        var msg = "Im Digvijay Kiran Lad";
+        document.getElementById("d1").innerHTML = msg;
+        document.getElementById("d2").innerHTML=msg.length;
+        document.getElementById("d3").innerHTML=msg.toUpperCase();
+        document.getElementById("d4").innerHTML=msg.toLowerCase();
+
+        //1.indexof()
+        document.getElementById("d5").innerHTML=msg.indexOf("Digvijay");//if not then -1 will return (Case sensitive)
+        document.getElementById("d6").innerHTML=msg.indexOf("Digvijay",4);
+
+    </script>
+</body>
+</html>

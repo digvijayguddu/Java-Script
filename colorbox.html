@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td {
+            text-align: center;
+            border: 2px black solid;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table border=""  width="25%">
+         <tr>
+        <td id="d1">1</td>
+        <td id="d2">2</td>
+        <td id="d3">3</td>
+        </tr>
+
+        <tr>
+            <td id="d4">4</td>
+            <td id="d5">5</td>
+            <td id="d6">6</td>
+        </tr>
+
+        <tr>
+            <td id="d7">7</td>
+            <td id="d8">8</td>
+            <td id="d9">9</td>
+        </tr>
+    </table> 
+        <br>
+
+        <label>Enter your choice</label>
+        <input type="text" id="mychoice">
+        <br>
+
+        <label>Enter your color</label>
+        <input type="color" id="mycolor">
+        <br>
+
+        <button onclick="selectcolor()">set color</button>
+        <br>
+
+        <script>
+            function selectcolor() {
+                var choice = document.getElementById("mychoice").value;
+                var col = document.getElementById("mycolor").value;
+
+                switch (choice){
+                    case "1":
+                        document.getElementById("d1").style.backgroundColor = col;
+                        break;
+
+                    case "2":
+                        document.getElementById("d2").style.backgroundColor = col;
+                        break;
+
+                    case "3":
+                        document.getElementById("d3").style.backgroundColor = col;
+                        break;
+
+                    case "4":
+                        document.getElementById("d4").style.backgroundColor = col;
+                        break;
+
+                    case "5":
+                        document.getElementById("d5").style.backgroundColor = col;
+                        break;
+
+                    case "6":
+                        document.getElementById("d6").style.backgroundColor = col;
+                        break;
+
+                    case "7":
+                        document.getElementById("d7").style.backgroundColor = col;
+                        break;
+
+                    case "8":
+                        document.getElementById("d8").style.backgroundColor = col;
+                        break; 
+                    case "9":
+                        document.getElementById("d9").style.backgroundColor = col;
+                        break;      
+                }
+            }
+        </script>
+</body>
+
+</html>
